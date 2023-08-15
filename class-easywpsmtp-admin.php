@@ -207,7 +207,8 @@ function swpsmtp_settings() {
 	</div>
 
 	<div class="swpsmtp-settings-container">
-		<div class="swpsmtp-settings-grid swpsmtp-settings-main-cont">
+		<!--<div class="swpsmtp-settings-grid swpsmtp-settings-main-cont">-->
+		<div class="swpsmtp-settings-grid">
 
 			<form autocomplete="off" id="swpsmtp_settings_form" method="post" action="">
 
@@ -541,21 +542,7 @@ function swpsmtp_settings() {
 			</div>
 			<?php do_action( 'easy_wp_smtp_admin_settings_tabs_content' ); ?>
 		</div>
-		<div class="swpsmtp-settings-grid swpsmtp-settings-sidebar-cont">
-			<div class="postbox" style="min-width: inherit;">
-				<h3 class="hndle"><label for="title"><?php esc_html_e( 'Documentation', 'easy-wp-smtp' ); ?></label></h3>
-				<div class="inside">
-					<?php
-						printf(
-							esc_html(
-								// translators: %s is replaced by documentation page URL
-								_x( "Please visit the %s plugin's documentation page to learn how to use this plugin.", '%s is replaced by <a target="_blank" href="https://wp-ecommerce.net/easy-wordpress-smtp-send-emails-from-your-wordpress-site-using-a-smtp-server-2197">Easy WP SMTP</a>', 'easy-wp-smtp' )
-							),
-							'<a target="_blank" href="https://wp-ecommerce.net/easy-wordpress-smtp-send-emails-from-your-wordpress-site-using-a-smtp-server-2197">Easy WP SMTP</a>'
-						);
-					?>
-				</div>
-			</div>
+		<!--<div class="swpsmtp-settings-grid swpsmtp-settings-sidebar-cont">
 			<div class="postbox" style="min-width: inherit;">
 				<h3 class="hndle"><label for="title"><?php esc_html_e( 'Support', 'easy-wp-smtp' ); ?></label></h3>
 				<div class="inside">
@@ -573,28 +560,7 @@ function swpsmtp_settings() {
 					?>
 				</div>
 			</div>
-			<div class="postbox" style="min-width: inherit;">
-				<h3 class="hndle"><label for="title"><?php esc_html_e( 'Rate Us', 'easy-wp-smtp' ); ?></label></h3>
-				<div class="inside">
-					<?php
-						printf(
-							esc_html(
-								// translators: %s is replaced by rating link
-								_x( 'Like the plugin? Please give us a %s', '%s is replaced by "rating" link', 'easy-wp-smtp' )
-							),
-							sprintf(
-								'<a href="https://wordpress.org/support/plugin/easy-wp-smtp/reviews/#new-post" target="_blank">%s</a>',
-								esc_html( __( 'rating', 'easy-wp-smtp' ) )
-							)
-						);
-					?>
-					<div class="swpsmtp-stars-container">
-						<a href="https://wordpress.org/support/plugin/easy-wp-smtp/reviews/?filter=5" target="_blank"><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span><span class="dashicons dashicons-star-filled"></span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
+		</div>-->
 	</div>
 
 	<?php
